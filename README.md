@@ -122,7 +122,7 @@ flask db upgrade
 
 ### Step 8: Import Problem Data
 The application uses a JSON file with math problems:
-# Copy questions.json to the proper location
+### Copy questions.json to the proper location
 cp questions.json my-project/
 
 ## 📝 Usage Guide
