@@ -30,7 +30,7 @@ A comprehensive web application for practicing and solving math problems with AI
 - **MySQL** - Relational database
 
 ## 🗂️ Project Structure
-
+```
 my-project/
 ├── frontend/               # Next.js frontend application
 │   ├── src/
@@ -55,7 +55,7 @@ my-project/
 │   └── requirements.txt    # Backend dependencies
 │
 └── questions.json          # Problem dataset
-
+```
 
 ## 🚀 Setup Instructions
 
