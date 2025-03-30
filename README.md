@@ -82,14 +82,14 @@ The frontend will be available at http://localhost:3000
 
 cd my-project/backend
 
-# Create and activate virtual environment
+### Create and activate virtual environment
 python -m venv venv
-# On Windows:
+### On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+### On macOS/Linux:
 source venv/bin/activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
 ### Step 4: Database Configuration
