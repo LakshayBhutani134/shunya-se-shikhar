@@ -31,11 +31,30 @@ A comprehensive web application for practicing and solving math problems with AI
 
 ## 🗂️ Project Structure
 
-GitHub Copilot
-Markdown for your README.md file
-Here's the README code in a format you can easily copy:
-
-my-project/ ├── frontend/ # Next.js frontend application │ ├── src/ │ │ ├── pages/ # Routes and page components │ │ ├── services/ # API services │ │ └── components/ # Reusable UI components │ ├── public/ # Static assets │ └── package.json # Frontend dependencies │ ├── backend/ # Flask backend application │ ├── app.py # Main application entry point │ ├── config.py # Configuration settings │ ├── extensions.py # Flask extensions │ ├── routes/ # API routes │ │ ├── user_routes.py # User authentication and management │ │ ├── problem_routes.py # Problem and solution management │ │ └── ocr.py # OCR and solution analysis │ ├── models/ # Database models │ │ ├── user.py # User model │ │ ├── problem.py # Problem and submissions models │ │ └── rating_history.py # User rating history │ └── requirements.txt # Backend dependencies │ └── questions.json # Problem dataset
+my-project/
+├── frontend/               # Next.js frontend application
+│   ├── src/
+│   │   ├── pages/          # Routes and page components
+│   │   ├── services/       # API services
+│   │   └── components/     # Reusable UI components
+│   ├── public/             # Static assets
+│   └── package.json        # Frontend dependencies
+│
+├── backend/                # Flask backend application
+│   ├── app.py              # Main application entry point
+│   ├── config.py           # Configuration settings
+│   ├── extensions.py       # Flask extensions
+│   ├── routes/             # API routes
+│   │   ├── user_routes.py  # User authentication and management
+│   │   ├── problem_routes.py # Problem and solution management
+│   │   └── ocr.py          # OCR and solution analysis
+│   ├── models/             # Database models
+│   │   ├── user.py         # User model
+│   │   ├── problem.py      # Problem and submissions models
+│   │   └── rating_history.py # User rating history
+│   └── requirements.txt    # Backend dependencies
+│
+└── questions.json          # Problem dataset
 
 
 ## 🚀 Setup Instructions
