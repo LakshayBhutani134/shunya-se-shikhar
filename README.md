@@ -108,41 +108,65 @@ GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
 Replace YOUR_GOOGLE_API_KEY with your Google API key for the Gemini API. You can obtain one at Google AI Studio.
 
 ### Step 6: Run the Backend
-# From the backend directory
 python app.py
 
 The backend API will be available at http://localhost:5000
 
-📝 Usage Guide
-User Authentication
-Sign Up: Create a new account with username and password
-Login: Access your account
-Password Reset: Reset forgotten passwords
-Solving Math Problems
-View problems organized by difficulty level
-Solve problems on paper
-Upload images of your solutions
-Receive immediate AI-powered feedback
-Earn points for correct answers
-Point System
-Earn 10 points for fully correct solutions
-Earn 7 points for partially correct solutions
-Earn 5 points for correct answers without proper work
-Lose 3 points for incorrect solutions
-Progress to higher difficulty levels based on points accumulated
-🌟 Features
-OCR-Powered Solution Checking
-The application uses Google's Gemini 2.5 Pro model to:
+### Step 7: Initialize the Database
+To create all the necessary tables in your database:
+The backend API will be available at http://localhost:5000
 
-Extract handwritten mathematics from images
-Parse mathematical expressions and steps
-Compare against system solutions
-Generate detailed feedback on student work
-Dynamic Problem Difficulty
-Problems are organized by difficulty levels (1-5)
-Users progress to higher levels as they earn points
-New problems unlock as users advance
-Progress Tracking
-Points persistence across sessions
-Visual feedback for correct/incorrect answers
-User rating history
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+
+### Step 8: Import Problem Data
+The application uses a JSON file with math problems:
+# Copy questions.json to the proper location
+cp questions.json my-project/
+
+## 📝 Usage Guide
+
+### User Authentication
+
+- **Sign Up**: Create a new account with username and password
+- **Login**: Access your account
+- **Password Reset**: Reset forgotten passwords
+
+### Solving Math Problems
+
+1. View problems organized by difficulty level
+2. Solve problems on paper
+3. Upload images of your solutions
+4. Receive immediate AI-powered feedback
+5. Earn points for correct answers
+
+### Point System
+
+- **Full Solutions**: Earn 10 points for fully correct solutions
+- **Partial Credit**: Earn 7 points for partially correct solutions
+- **Correct Answers Only**: Earn 5 points for correct answers without proper work
+- **Incorrect Solutions**: Lose 3 points for incorrect solutions
+- **Level Progression**: Advance to higher difficulty levels as you accumulate points
+
+## 🌟 Features
+
+### OCR-Powered Solution Checking
+
+The application uses Google's Gemini 2.5 Pro model to:
+- Extract handwritten mathematics from images
+- Parse mathematical expressions and steps
+- Compare against system solutions
+- Generate detailed feedback on student work
+
+### Dynamic Problem Difficulty
+
+- Problems are organized by difficulty levels (1-5)
+- Users progress to higher levels as they earn points
+- New problems unlock as users advance
+
+### Progress Tracking
+
+- Points persistence across sessions
+- Visual feedback for correct/incorrect answers
+- User rating history
